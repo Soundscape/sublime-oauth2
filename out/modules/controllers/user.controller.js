@@ -1,0 +1,1 @@
+(function(){module.exports=function(e){return{post:function(n,r){var o;return o={username:n.body.username,password:n.body.password},e.models.user.create(o).exec(function(e,n){return e?r.send(e):r.json(n)})},get:function(n,r){return e.models.user.find().exec(function(e,n){return e?r.send(e):r.json(n)})}}}}).call(this);

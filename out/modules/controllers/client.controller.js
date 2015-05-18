@@ -1,0 +1,1 @@
+(function(){module.exports=function(e){return{post:function(n,r){var t;return t={name:n.body.name,secret:n.body.secret,userId:n.user.id},e.models.client.create(t).exec(function(e,n){return e?r.send(e):r.json(n)})},get:function(n,r){return e.models.client.find().where({userId:n.user.id}).exec(function(e,n){return e?r.send(e):r.json(n)})}}}}).call(this);

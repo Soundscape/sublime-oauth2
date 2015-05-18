@@ -1,0 +1,1 @@
+(function(){var e,t;t=require("../"),e=require("config"),describe("Server test suite",function(){var r;return r=new t.Server(t.Data,e),it("should construct an instance",function(){return expect(r).not.toBeNull()})})}).call(this);
